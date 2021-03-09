@@ -26,26 +26,26 @@ public class AppTest
     Service service;
 
     @Test
-    void tc_1_addStudents() {
+    public void tc_1_addStudents() {
         studentXMLRepository = new StudentXMLRepo("fisiere/Studenti.xml");
         temaXMLRepository = new TemaXMLRepo("fisiere/Teme.xml");
         notaValidator = new NotaValidator(studentXMLRepository, temaXMLRepository);
         notaXMLRepository = new NotaXMLRepo("fisiere/Note.xml");
         service = new Service(studentXMLRepository, studentValidator, temaXMLRepository, temaValidator, notaXMLRepository, notaValidator);
 
-        Student student = new Student("1", "test1", 933, "email1");
+        Student student = new Student("111", "test1", 933, "email1");
         assertNull(service.addStudent(student));
     }
 
     @Test
-    void tc_2_addStudents() {
+    public void tc_2_addStudents() {
         studentXMLRepository = new StudentXMLRepo("fisiere/Studenti.xml");
         temaXMLRepository = new TemaXMLRepo("fisiere/Teme.xml");
         notaValidator = new NotaValidator(studentXMLRepository, temaXMLRepository);
         notaXMLRepository = new NotaXMLRepo("fisiere/Note.xml");
         service = new Service(studentXMLRepository, studentValidator, temaXMLRepository, temaValidator, notaXMLRepository, notaValidator);
 
-        Student student = new Student("2", "test2", 1001, "email2");
+        Student student = new Student("222", "test2", 1001, "email2");
         assertNotNull(service.addStudent(student));
     }
 }
