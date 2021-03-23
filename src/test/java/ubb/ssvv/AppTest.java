@@ -24,10 +24,10 @@ public class AppTest
     StudentValidator studentValidator = new StudentValidator();
     TemaValidator temaValidator = new TemaValidator();
     StudentXMLRepo studentXMLRepository = new StudentXMLRepo("fisiere/StudentiTest.xml");
-    TemaXMLRepo temaXMLRepository = new TemaXMLRepo("fisiere/Teme.xml");;
-    NotaValidator notaValidator = new NotaValidator(studentXMLRepository, temaXMLRepository);;
-    NotaXMLRepo notaXMLRepository = new NotaXMLRepo("fisiere/Note.xml");;
-    Service service = new Service(studentXMLRepository, studentValidator, temaXMLRepository, temaValidator, notaXMLRepository, notaValidator);;
+    TemaXMLRepo temaXMLRepository = new TemaXMLRepo("fisiere/Teme.xml");
+    NotaValidator notaValidator = new NotaValidator(studentXMLRepository, temaXMLRepository);
+    NotaXMLRepo notaXMLRepository = new NotaXMLRepo("fisiere/Note.xml");
+    Service service = new Service(studentXMLRepository, studentValidator, temaXMLRepository, temaValidator, notaXMLRepository, notaValidator);
 
     @Test
     public void tc_1_addStudents() {
