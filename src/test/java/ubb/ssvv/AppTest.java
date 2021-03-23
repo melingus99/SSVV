@@ -18,7 +18,6 @@ import static org.junit.Assert.*;
 /**
  * Unit test for simple App.
  */
-@FixMethodOrder(MethodSorters.JVM)
 public class AppTest 
 {
     StudentValidator studentValidator = new StudentValidator();
