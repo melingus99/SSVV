@@ -76,3 +76,21 @@ Nota: 9.0
 Predata in saptamana: 2
 Deadline: 9
 Feedback: feedback
+
+Tema: 55
+Nota: 8.0
+Predata in saptamana: 2
+Deadline: 9
+Feedback: feedback
+
+Tema: 111
+Nota: 8.0
+Predata in saptamana: 2
+Deadline: 4
+Feedback: feedback
+
+Tema: 222
+Nota: 9.0
+Predata in saptamana: 2
+Deadline: 9
+Feedback: feedback
