@@ -72,4 +72,20 @@ public class IntegrationTest {
         assertNull(t);
         assertEquals(n, 9.0, 0.0002);
     }
+
+    @Test
+    public void tc_1_addStudentAssignment() {
+        if(service.findStudent("55") != null) {
+            service.deleteStudent("55");
+        }
+        Student s = service.addStudent(new Student("55", "nume", 933, "email@email.email"));
+
+        if(service.findTema("56") != null) {
+            service.deleteTema("56");
+        }
+        Tema t = service.addTema(new Tema("56", "desc", 9, 7));
+
+        assertNull(s);
+        assertNull(t);
+    }
 }
